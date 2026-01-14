@@ -120,47 +120,44 @@ export default {
         });
       }
 
-      // 验证 URL 有效性 (200 OK)
+      // 验证 URL 安全性 (通过 Cloudflare Family DNS)
+      // 我们通过 DoH (DNS over HTTPS) 查询域名
+      // 如果域名被 Cloudflare Family DNS (1.1.1.3) 拦截（通常解析为 0.0.0.0 或 ::），则说明是不安全/成人内容
       try {
-          const urlCheckResp = await fetch(url, {
-              method: "HEAD", // 尝试 HEAD 请求以节省带宽
-              headers: {
-                  "User-Agent": "Mozilla/5.0 (compatible; URLChecker/1.0)"
-              }
-          });
+          const hostname = parsedUrl.hostname;
+          // 排除 IP 地址 (简单的正则，非严谨)
+          const isIp = /^(\d{1,3}\.){3}\d{1,3}$/.test(hostname) || hostname.includes(':');
           
-          if (!urlCheckResp.ok) {
-              // 如果 HEAD 失败 (如 405 Method Not Allowed)，尝试 GET
-              if (urlCheckResp.status === 405 || urlCheckResp.status === 404 || urlCheckResp.status === 403) {
-                  // 有些服务器对 HEAD 返回 404/403 但对 GET 正常，或者不支持 HEAD
-                  // 但用户要求 "不返回 200 OK 则拒绝"。
-                  // 严格来说，301/302 也是有效的重定向，通常我们也应该允许。
-                  // 如果 HEAD 失败，我们再试一次 GET，以防万一。
-                  const urlCheckRespGet = await fetch(url, {
-                      method: "GET",
-                      headers: {
-                          "User-Agent": "Mozilla/5.0 (compatible; URLChecker/1.0)"
+          if (!isIp) {
+              const dohUrl = `https://family.cloudflare-dns.com/dns-query?name=${encodeURIComponent(hostname)}`;
+              const dohResp = await fetch(dohUrl, {
+                  headers: { "Accept": "application/dns-json" }
+              });
+              
+              if (dohResp.ok) {
+                  const dnsData = await dohResp.json();
+                  // 检查 Answer
+                  if (dnsData.Answer) {
+                      for (const answer of dnsData.Answer) {
+                          // Cloudflare Family DNS 拦截的域名通常解析到 0.0.0.0 或 ::
+                          if (answer.data === "0.0.0.0" || answer.data === "::") {
+                              return Response.json({ error: "URL blocked by Cloudflare Family DNS (Malware/Adult Content)" }, { 
+                                  status: 400,
+                                  headers: { "Access-Control-Allow-Origin": "*" }
+                              });
+                          }
                       }
-                  });
-                  if (!urlCheckRespGet.ok) {
-                      return Response.json({ error: `URL check failed: ${urlCheckRespGet.status} ${urlCheckRespGet.statusText}` }, { 
-                          status: 400,
-                          headers: { "Access-Control-Allow-Origin": "*" }
-                      });
+                  } else {
+                      // 如果没有 Answer (NXDOMAIN 等)，可能域名不存在
+                      // 但 DoH 有时对 CNAME 处理不同，这里我们主要关注拦截
+                      // 如果用户输入了不存在的域名，虽然不能访问，但不算安全风险
                   }
-              } else {
-                  return Response.json({ error: `URL check failed: ${urlCheckResp.status} ${urlCheckResp.statusText}` }, { 
-                      status: 400,
-                      headers: { "Access-Control-Allow-Origin": "*" }
-                  });
               }
           }
       } catch (e) {
-          console.error("URL Validation Error:", e);
-          return Response.json({ error: "URL validation failed: Unable to connect to target URL" }, { 
-              status: 400,
-              headers: { "Access-Control-Allow-Origin": "*" }
-          });
+          console.error("DNS Safety Check Error:", e);
+          // 如果 DNS 检查失败，暂时放行，或者选择拒绝 (取决于安全策略)
+          // 这里选择放行，避免因 DoH 服务抖动影响业务
       }
 
       if (!expired_at || typeof expired_at !== "number") {
