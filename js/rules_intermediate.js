@@ -1246,5 +1246,9 @@ window.RULES_INTERMEDIATE = {
     "/123123123": {
         "url": "https://github.com/afoim/Static_Redirect_Group",
         "expired_at": "2026-01-16T17:03:00.000Z"
+    },
+    "/example": {
+        "url": "https://example.com?payload={\"name\":\"233\"}",
+        "expired_at": "2026-01-16T21:56:00.000Z"
     }
 };
