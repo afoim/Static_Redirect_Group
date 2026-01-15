@@ -143,7 +143,7 @@
         const CF_RETRY_KEY = 'cfRetryPayload';
         const CF_RETRY_FLAG_KEY = 'cfRetryAutoSubmit';
         const CF_RETRY_COUNT_KEY = 'cfRetryCount';
-        const CF_RETRY_MAX = 2;
+        const CF_RETRY_MAX = 1;
 
         function saveRetryPayload(payload) {
             localStorage.setItem(CF_RETRY_KEY, JSON.stringify(payload));
@@ -187,7 +187,7 @@
 
         function isRetryCountExceeded() {
             const count = parseInt(localStorage.getItem(CF_RETRY_COUNT_KEY) || '0', 10);
-            return count > CF_RETRY_MAX;
+            return count >= CF_RETRY_MAX;
         }
 
         function maybeHandleCfChallenge(response, payload) {
@@ -210,6 +210,7 @@
                 consumeAutoSubmitFlag();
                 if (isRetryCountExceeded()) {
                     showError('检测到多次挑战阻断，请稍后再试或切换网络环境');
+                    clearRetryState();
                     return;
                 }
                 document.getElementById('createForm').requestSubmit();
@@ -256,8 +257,7 @@
                 const payload = {
                     pathname: pathname,
                     url: url,
-                    expired_at: timestamp,
-                    expired_at_input: expiredAtInput
+                    expired_at: timestamp
                 };
 
                 const response = await fetch('/api/create', {
@@ -335,10 +335,12 @@
                     clearRetryState();
                 } else {
                     showError(result.error || '提交失败');
+                    clearRetryState();
                 }
             } catch (err) {
                 console.error(err);
                 showError(err.message || '网络错误或请求失败');
+                clearRetryState();
             } finally {
                 submitBtn.disabled = false;
             }
