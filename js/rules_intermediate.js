@@ -1226,5 +1226,9 @@ window.RULES_INTERMEDIATE = {
     "/fsdfsdfsdf": {
         "url": "https://baidu.com",
         "expired_at": "2026-01-19T16:11:00.000Z"
+    },
+    "/efgfg": {
+        "url": "https://paste.142588.xyz/paste/QpBKuQ",
+        "expired_at": "2026-01-15T13:50:00.000Z"
     }
 };
