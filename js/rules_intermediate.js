@@ -1230,5 +1230,9 @@ window.RULES_INTERMEDIATE = {
     "/efgfg": {
         "url": "https://paste.142588.xyz/paste/QpBKuQ",
         "expired_at": "2026-01-15T13:50:00.000Z"
+    },
+    "/yzchili": {
+        "url": "https://www.yzchili.dpdns.org/",
+        "expired_at": "2026-01-22T14:06:00.000Z"
     }
 };
