@@ -2158,5 +2158,9 @@ window.RULES_INTERMEDIATE = {
     "/97ead": {
         "url": "https://x.xx/?d={\"p\": \"0b269\", \"c\": \"VVnd_7U6dS_IxLYh12Y13e2-q7GMR5YCLZWaAT2L57KKmeSh4RNH8YzT9Q594XPp-qOzHtWrhBAmT6NfC96q3o81deYYyOryxQ2m-sVE6dH4WN_hJnUcRxPZwqHPZ6ln7Zq5Vc8fYwt\", \"n\": null, \"v\": \"97ead\"}",
         "expired_at": "2026-01-19T01:03:49.000Z"
+    },
+    "/settingsmd": {
+        "url": "https://x.xx/?d=d9613&type=header&filename=\"settings.md\"&validation=\"681679c137054dacbfb1b1cf02e9ff91\"&expire_at=\"2026-01-19T01:03:49.000Z\"",
+        "expired_at": "2026-01-20T01:09:00.000Z"
     }
 };
