@@ -4714,5 +4714,9 @@ window.RULES_INTERMEDIATE = {
     "/rplfs4": {
         "url": "https://cv.notaone.cn/",
         "expired_at": "2026-01-27T11:45:36.000Z"
+    },
+    "/e0w6whuvwg": {
+        "url": "https://cv.notaone.cn/",
+        "expired_at": "2026-01-27T11:45:38.000Z"
     }
 };
