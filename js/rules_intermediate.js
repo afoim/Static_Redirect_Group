@@ -7366,5 +7366,9 @@ window.RULES_INTERMEDIATE = {
     "/biminshan": {
         "url": "https://91zb26.co",
         "expired_at": "2026-01-30T02:56:00.000Z"
+    },
+    "/lc112": {
+        "url": "https://www.bilibili.com/video/BV1vxrnBnEru/?spm_id_from=333.1007.tianma.1-3-3.click",
+        "expired_at": "2026-01-23T06:00:00.000Z"
     }
 };
