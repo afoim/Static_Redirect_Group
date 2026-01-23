@@ -7378,5 +7378,9 @@ window.RULES_INTERMEDIATE = {
     "/xz001": {
         "url": "https://c.wss.ink/f/j0mplp7iaqs",
         "expired_at": "2026-01-24T08:49:00.000Z"
+    },
+    "/f2222": {
+        "url": "https://lanzou.ly93.cc/inv2s3edxjbe",
+        "expired_at": "2026-01-30T09:37:00.000Z"
     }
 };
