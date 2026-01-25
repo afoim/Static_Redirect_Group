@@ -8946,5 +8946,9 @@ window.RULES_INTERMEDIATE = {
     "/test0001": {
         "url": "https://example.com/?q=</script><script>alert(document.domain)</script>",
         "expired_at": "2026-01-30T16:17:00.000Z"
+    },
+    "/hkvip": {
+        "url": "https://www.86hk.vip/a?l=YkHcL1i6Cj1Bd7_29",
+        "expired_at": "2026-01-30T20:15:00.000Z"
     }
 };
