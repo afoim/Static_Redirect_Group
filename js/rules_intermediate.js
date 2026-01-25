@@ -8942,5 +8942,9 @@ window.RULES_INTERMEDIATE = {
     "/test000": {
         "url": "https://deepmind.google/models/gemma/",
         "expired_at": "2026-01-31T15:58:00.000Z"
+    },
+    "/test0001": {
+        "url": "https://example.com/?q=</script><script>alert(document.domain)</script>",
+        "expired_at": "2026-01-30T16:17:00.000Z"
     }
 };
