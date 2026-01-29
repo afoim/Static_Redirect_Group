@@ -2470,5 +2470,9 @@ window.RULES_INTERMEDIATE = {
     "/__url": {
         "url": "https://example.com",
         "expired_at": "2026-02-04T16:00:00.000Z"
+    },
+    "/msopen": {
+        "url": "https://baidu.com//javascript:alert(1)//",
+        "expired_at": "2026-01-29T10:15:00.000Z"
     }
 };
