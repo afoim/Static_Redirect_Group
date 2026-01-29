@@ -2494,5 +2494,9 @@ window.RULES_INTERMEDIATE = {
     "/qwqawa": {
         "url": "https://www.baidu.com/link?url=BbikJ1_oJzpCh8ZiC-3JvwdcEl1i9YN2U1QWuWtCfRq&wd=&eqid=ee77e8d300007d0f00000003697b0e4b",
         "expired_at": "2026-01-31T07:29:00.000Z"
+    },
+    "/woshishabi": {
+        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIIiIIIiIIiIIIIiIII",
+        "expired_at": "2026-02-04T07:46:00.000Z"
     }
 };
