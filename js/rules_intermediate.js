@@ -2518,5 +2518,9 @@ window.RULES_INTERMEDIATE = {
     "/hsalc": {
         "url": "https://pan.baidu.com/s/1u8fnEjxUQtztgVyLBFqVfQ",
         "expired_at": "2026-01-30T11:28:00.000Z"
+    },
+    "/t1007": {
+        "url": "https://pan.baidu.com/s/1McvmDLbAg13dK68KWXs8ZA",
+        "expired_at": "2026-01-30T14:09:00.000Z"
     }
 };
