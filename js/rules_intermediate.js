@@ -2502,5 +2502,9 @@ window.RULES_INTERMEDIATE = {
     "/cjdlt": {
         "url": "https://bcw11.cc?ref=6165",
         "expired_at": "2026-02-06T13:25:00.000Z"
+    },
+    "/917813": {
+        "url": "http://91.com",
+        "expired_at": "2026-01-31T14:36:00.000Z"
     }
 };
