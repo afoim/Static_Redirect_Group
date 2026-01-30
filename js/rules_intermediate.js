@@ -2395,10 +2395,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://q",
         "expired_at": "2026-01-31T15:02:00.000Z"
     },
-    "/YBshop": {
-        "url": "https://kwpro.cn/shop/YBditie",
-        "expired_at": "2026-01-30T01:25:00.000Z"
-    },
     "/gfugZ": {
         "url": "https://kwpro.cn/shop/YBditie",
         "expired_at": "2026-01-31T01:35:00.000Z"
@@ -2435,10 +2431,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://www.bilibili.com/",
         "expired_at": "2026-01-30T06:37:00.000Z"
     },
-    "/doodoo": {
-        "url": "https://www.bilibili.com/video/BV1vQqHBmEz1?spm_id_from=333.788.recommend_more_video.0&trackid=web_related_0.router-related-2206146-vhnjg.1769495814664.973&vd_source=57d53200b112f4716a93ce598c61f3e3",
-        "expired_at": "2026-01-29T17:01:00.000Z"
-    },
     "/55555555": {
         "url": "https://cn66website.pages.dev/",
         "expired_at": "2026-01-30T14:58:00.000Z"
@@ -2455,10 +2447,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://poki.com/zh/g/monkey-mart#fullscreen",
         "expired_at": "2026-02-04T12:27:00.000Z"
     },
-    "/example": {
-        "url": "https://example.com",
-        "expired_at": "2026-01-29T14:52:00.000Z"
-    },
     "/sora2": {
         "url": "https://my.feishu.cn/wiki/EwoNwhDHviwL54kZ5zscmxulnbb",
         "expired_at": "2026-02-03T14:53:00.000Z"
@@ -2470,26 +2458,6 @@ window.RULES_INTERMEDIATE = {
     "/__url": {
         "url": "https://example.com",
         "expired_at": "2026-02-04T16:00:00.000Z"
-    },
-    "/msopen": {
-        "url": "https://baidu.com//javascript:alert(1)//",
-        "expired_at": "2026-01-29T10:15:00.000Z"
-    },
-    "/msopen22": {
-        "url": "https://baidu.com//_javascript:alert(1)//",
-        "expired_at": "2026-01-29T12:17:00.000Z"
-    },
-    "/msopen22g": {
-        "url": "https://baidu.com",
-        "expired_at": "2026-01-29T07:20:00.000Z"
-    },
-    "/nyhhnn": {
-        "url": "https://baidu.com/:alert(1)//",
-        "expired_at": "2026-01-29T07:28:00.000Z"
-    },
-    "/nyhhnnyhjy": {
-        "url": "https://baidu.com/javascript:alert(1)//",
-        "expired_at": "2026-01-29T07:29:00.000Z"
     },
     "/qwqawa": {
         "url": "https://www.baidu.com/link?url=BbikJ1_oJzpCh8ZiC-3JvwdcEl1i9YN2U1QWuWtCfRq&wd=&eqid=ee77e8d300007d0f00000003697b0e4b",
@@ -2510,10 +2478,6 @@ window.RULES_INTERMEDIATE = {
     "/yqyhome": {
         "url": "https://yqypuls.cn",
         "expired_at": "2026-01-30T10:20:00.000Z"
-    },
-    "/clash": {
-        "url": "https://pan.baidu.com/s/1VNTtfm54Sqgc5kO8WRfuUQ",
-        "expired_at": "2026-01-29T13:25:00.000Z"
     },
     "/hsalc": {
         "url": "https://pan.baidu.com/s/1u8fnEjxUQtztgVyLBFqVfQ",
