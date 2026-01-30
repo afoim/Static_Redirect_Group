@@ -2498,5 +2498,9 @@ window.RULES_INTERMEDIATE = {
     "/zzczz": {
         "url": "https://linux.do/t/topic/1543437",
         "expired_at": "2026-01-31T10:48:00.000Z"
+    },
+    "/cjdlt": {
+        "url": "https://bcw11.cc?ref=6165",
+        "expired_at": "2026-02-06T13:25:00.000Z"
     }
 };
