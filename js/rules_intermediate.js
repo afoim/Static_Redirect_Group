@@ -2554,5 +2554,9 @@ window.RULES_INTERMEDIATE = {
     "/p140564539": {
         "url": "https://httpbin.org/redirect-to?status_code=301&url=https://www.pixiv.net/artworks/140564539",
         "expired_at": "2026-02-06T00:11:55.560Z"
+    },
+    "/yiyiyi": {
+        "url": "https://junxiyiyi.lanzouq.com/ivUBN3hf74mj",
+        "expired_at": "2026-02-05T15:59:00.000Z"
     }
 };
