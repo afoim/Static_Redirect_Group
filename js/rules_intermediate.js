@@ -1278,5 +1278,9 @@ window.RULES_INTERMEDIATE = {
     "/klklm": {
         "url": "https://yb.tencent.com/fes/red/claim?signature=401748f2676148eb35d161968777d01215969d3b6066781b0b48069db6ad754c&red_packet_id=e3b6d2a8c6714cc89063e745186c64cc&yb_use_wechat_download_page=1",
         "expired_at": "2026-02-03T20:24:00.000Z"
+    },
+    "/qqqqq": {
+        "url": "https://qun.qq.com/universal-share/share?ac=1&authKey=kxYA8SfEruRrQHEniJUrUkYDFmgk%2BkTBtdox0yhFrTBgDNp7a%2BxWzwpOUk9Vv5Ox&busi_data=eyJncm91cENvZGUiOiI1NDUzNjM3NjEiLCJ0b2tlbiI6IjQxRG0xL2d3TitzNVJiZHp5cnMwMUZMYXB4N0t6NDMxOXh3a0dRWmJuazFQNU4rVWhUaDYyQ1d3am5URXYvVjAiLCJ1aW4iOiIzNjMxMzM4MTMzIn0%3D&data",
+        "expired_at": "2026-02-08T03:22:00.000Z"
     }
 };
