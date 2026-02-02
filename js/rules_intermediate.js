@@ -1167,10 +1167,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/114514e2e2": {
-        "url": "https://www.bilibili.com/",
-        "expired_at": "2026-02-01T08:20:00.000Z"
-    },
     "/klxss": {
         "url": "https://120524.xyz/",
         "expired_at": "2026-02-04T11:30:00.000Z"
@@ -1182,10 +1178,6 @@ window.RULES_INTERMEDIATE = {
     "/sora2": {
         "url": "https://my.feishu.cn/wiki/EwoNwhDHviwL54kZ5zscmxulnbb",
         "expired_at": "2026-02-03T14:53:00.000Z"
-    },
-    "/coloryi": {
-        "url": "https://coloryi.dpdns.org/",
-        "expired_at": "2026-02-01T15:59:00.000Z"
     },
     "/__url": {
         "url": "https://example.com",
