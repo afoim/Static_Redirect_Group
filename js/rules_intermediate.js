@@ -1290,5 +1290,9 @@ window.RULES_INTERMEDIATE = {
     "/qxcvn": {
         "url": "https://9lnk.io/T9",
         "expired_at": "2026-02-08T10:06:00.000Z"
+    },
+    "/a11111": {
+        "url": "https://baidu.com",
+        "expired_at": "2026-02-05T16:00:00.000Z"
     }
 };
