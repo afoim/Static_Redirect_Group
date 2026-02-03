@@ -1263,10 +1263,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://luckyy.qzz.io/home/",
         "expired_at": "2026-02-07T05:48:00.000Z"
     },
-    "/dddddd": {
-        "url": "http://www.google.com",
-        "expired_at": "2026-02-02T16:04:00.000Z"
-    },
     "/karolbili": {
         "url": "https://www.bilibili.com",
         "expired_at": "2026-02-07T13:27:00.000Z"
@@ -1282,14 +1278,6 @@ window.RULES_INTERMEDIATE = {
     "/qqqqq": {
         "url": "https://qun.qq.com/universal-share/share?ac=1&authKey=kxYA8SfEruRrQHEniJUrUkYDFmgk%2BkTBtdox0yhFrTBgDNp7a%2BxWzwpOUk9Vv5Ox&busi_data=eyJncm91cENvZGUiOiI1NDUzNjM3NjEiLCJ0b2tlbiI6IjQxRG0xL2d3TitzNVJiZHp5cnMwMUZMYXB4N0t6NDMxOXh3a0dRWmJuazFQNU4rVWhUaDYyQ1d3am5URXYvVjAiLCJ1aW4iOiIzNjMxMzM4MTMzIn0%3D&data",
         "expired_at": "2026-02-08T03:22:00.000Z"
-    },
-    "/524368": {
-        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/",
-        "expired_at": "2026-02-02T14:10:00.000Z"
-    },
-    "/laoma": {
-        "url": "https://308.zke.me",
-        "expired_at": "2026-02-02T16:59:00.000Z"
     },
     "/yalolo": {
         "url": "https://ming329.me",
