@@ -1286,5 +1286,9 @@ window.RULES_INTERMEDIATE = {
     "/ldchat": {
         "url": "https://chat.dijiaozhibei.top/",
         "expired_at": "2026-02-10T09:48:00.000Z"
+    },
+    "/qxcvn": {
+        "url": "https://9lnk.io/T9",
+        "expired_at": "2026-02-08T10:06:00.000Z"
     }
 };
