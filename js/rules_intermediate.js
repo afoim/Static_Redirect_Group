@@ -1175,10 +1175,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://poki.com/zh/g/monkey-mart#fullscreen",
         "expired_at": "2026-02-04T12:27:00.000Z"
     },
-    "/sora2": {
-        "url": "https://my.feishu.cn/wiki/EwoNwhDHviwL54kZ5zscmxulnbb",
-        "expired_at": "2026-02-03T14:53:00.000Z"
-    },
     "/__url": {
         "url": "https://example.com",
         "expired_at": "2026-02-04T16:00:00.000Z"
@@ -1194,10 +1190,6 @@ window.RULES_INTERMEDIATE = {
     "/asdfghjkl": {
         "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIiiiiIiIIIiiIIiIIi",
         "expired_at": "2026-02-04T07:49:00.000Z"
-    },
-    "/red1loltes": {
-        "url": "https://example.com",
-        "expired_at": "2026-02-03T08:05:00.000Z"
     },
     "/huijing": {
         "url": "https://www.123865.com/s/eY85Td-HPwGd",
@@ -1271,17 +1263,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://club.vip.qq.com/openKuikly/vas_qqvip_speed_act?open_kuikly_info=%7B%22bundle_name%22%3A%22vas_qqvip_speed_act%22%7D&qqmc_config=vas_kuikly_config&page_name=vas_qqvip_speed_act&kr_turbo_display=1&enteranceId=tupian&invite_code=e311f0f6-5425-4818-82e8-e021d10c5789&from=more_invite",
         "expired_at": "2026-02-06T14:43:00.000Z"
     },
-    "/klklm": {
-        "url": "https://yb.tencent.com/fes/red/claim?signature=401748f2676148eb35d161968777d01215969d3b6066781b0b48069db6ad754c&red_packet_id=e3b6d2a8c6714cc89063e745186c64cc&yb_use_wechat_download_page=1",
-        "expired_at": "2026-02-03T20:24:00.000Z"
-    },
     "/qqqqq": {
         "url": "https://qun.qq.com/universal-share/share?ac=1&authKey=kxYA8SfEruRrQHEniJUrUkYDFmgk%2BkTBtdox0yhFrTBgDNp7a%2BxWzwpOUk9Vv5Ox&busi_data=eyJncm91cENvZGUiOiI1NDUzNjM3NjEiLCJ0b2tlbiI6IjQxRG0xL2d3TitzNVJiZHp5cnMwMUZMYXB4N0t6NDMxOXh3a0dRWmJuazFQNU4rVWhUaDYyQ1d3am5URXYvVjAiLCJ1aW4iOiIzNjMxMzM4MTMzIn0%3D&data",
         "expired_at": "2026-02-08T03:22:00.000Z"
-    },
-    "/yalolo": {
-        "url": "https://ming329.me",
-        "expired_at": "2026-02-03T18:08:00.000Z"
     },
     "/ldchat": {
         "url": "https://chat.dijiaozhibei.top/",
