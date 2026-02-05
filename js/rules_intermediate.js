@@ -1254,5 +1254,9 @@ window.RULES_INTERMEDIATE = {
     "/1145140": {
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3178782229&searchtext=%E5%9B%BD%E5%BE%BD",
         "expired_at": "2026-02-05T17:51:00.000Z"
+    },
+    "/ShrySafety": {
+        "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
+        "expired_at": "2026-02-11T15:42:00.000Z"
     }
 };
