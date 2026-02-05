@@ -1167,30 +1167,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/klxss": {
-        "url": "https://120524.xyz/",
-        "expired_at": "2026-02-04T11:30:00.000Z"
-    },
-    "/Microsoft": {
-        "url": "https://poki.com/zh/g/monkey-mart#fullscreen",
-        "expired_at": "2026-02-04T12:27:00.000Z"
-    },
-    "/__url": {
-        "url": "https://example.com",
-        "expired_at": "2026-02-04T16:00:00.000Z"
-    },
-    "/woshishabi": {
-        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIIiIIIiIIiIIIIiIII",
-        "expired_at": "2026-02-04T07:46:00.000Z"
-    },
-    "/gugugaga": {
-        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiIIiiIIIiIIIiIiIiIIiiIIIiIIIiIiIiIIiiIIIiIIiiiiIiIIiiIIIiIIiiiiIiiIi",
-        "expired_at": "2026-02-04T07:48:00.000Z"
-    },
-    "/asdfghjkl": {
-        "url": "https://iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.in/iIIIIiIIiiIiiiIiiIIIiIiIiIIIiiIiiIIiIIiiiiIiiiIiiiIIIiIiiiIiiiIiiIIiIiiiiIIIiIiiiIIIiIiiiIIIiiiiiIIIiiIIiiIIIiIiiiIiIIIIiiIiIIIIiiIIiiIiiIIIIiiiiiIiIIIiiIIiIIIiiIIIIiIiiiIiIIIIiIIiiiiIiIIIiiIIiIIi",
-        "expired_at": "2026-02-04T07:49:00.000Z"
-    },
     "/huijing": {
         "url": "https://www.123865.com/s/eY85Td-HPwGd",
         "expired_at": "2026-02-06T02:10:00.000Z"
@@ -1199,25 +1175,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://bcw11.cc?ref=6165",
         "expired_at": "2026-02-06T13:25:00.000Z"
     },
-    "/xiaoxi": {
-        "url": "https://dnq.br3.cn/o",
-        "expired_at": "2026-02-04T16:34:00.000Z"
-    },
-    "/xiaoxiovo": {
-        "url": "http://120.26.230.208:3000/#/chat",
-        "expired_at": "2026-02-04T18:03:00.000Z"
-    },
-    "/uwu__uwu": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://2x.nz/uwu__uwu",
-        "expired_at": "2026-02-04T21:05:00.000Z"
-    },
     "/percent": {
         "url": "http://1.1.1.1?%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
         "expired_at": "2026-02-05T16:00:00.000Z"
-    },
-    "/uuuwwwuuu": {
-        "url": "https://2x.nz./uuuwwwuuu",
-        "expired_at": "2026-02-04T16:00:00.000Z"
     },
     "/___url": {
         "url": "https://2x.nz./_url",
@@ -1278,10 +1238,6 @@ window.RULES_INTERMEDIATE = {
     "/a11111": {
         "url": "https://baidu.com",
         "expired_at": "2026-02-05T16:00:00.000Z"
-    },
-    "/mdfxc": {
-        "url": "http://82.157.66.30:8588/",
-        "expired_at": "2026-02-04T07:28:00.000Z"
     },
     "/conlt": {
         "url": "https://contract.freeflarum.com",
