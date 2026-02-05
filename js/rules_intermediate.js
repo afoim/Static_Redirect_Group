@@ -1258,5 +1258,9 @@ window.RULES_INTERMEDIATE = {
     "/ShrySafety": {
         "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
         "expired_at": "2026-02-11T15:42:00.000Z"
+    },
+    "/ShiraySafe": {
+        "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
+        "expired_at": "2026-02-12T15:42:00.000Z"
     }
 };
