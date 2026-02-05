@@ -1242,5 +1242,9 @@ window.RULES_INTERMEDIATE = {
     "/conlt": {
         "url": "https://contract.freeflarum.com",
         "expired_at": "2026-02-11T08:05:00.000Z"
+    },
+    "/mylink": {
+        "url": "https://github.com/IDhammaI/FrogClient/commits/1.0",
+        "expired_at": "2026-02-05T04:38:00.000Z"
     }
 };
