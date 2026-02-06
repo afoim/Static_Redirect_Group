@@ -1167,49 +1167,13 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/huijing": {
-        "url": "https://www.123865.com/s/eY85Td-HPwGd",
-        "expired_at": "2026-02-06T02:10:00.000Z"
-    },
     "/cjdlt": {
         "url": "https://bcw11.cc?ref=6165",
         "expired_at": "2026-02-06T13:25:00.000Z"
     },
-    "/percent": {
-        "url": "http://1.1.1.1?%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-        "expired_at": "2026-02-05T16:00:00.000Z"
-    },
-    "/___url": {
-        "url": "https://2x.nz./_url",
-        "expired_at": "2026-02-06T01:09:00.000Z"
-    },
-    "/kkaann": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://kemono.cr/fanbox/user/44987750",
-        "expired_at": "2026-02-05T18:06:00.000Z"
-    },
-    "/pornhub": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://pornhub.com",
-        "expired_at": "2026-02-05T18:06:00.000Z"
-    },
     "/pixiv": {
         "url": "https://httpbin.org/redirect-to?status_code=301&url=https://pixiv.net",
         "expired_at": "2026-02-06T15:59:00.000Z"
-    },
-    "/p140570689": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://www.pixiv.net/artworks/140570689",
-        "expired_at": "2026-02-06T00:10:16.747Z"
-    },
-    "/p140564539": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://www.pixiv.net/artworks/140564539",
-        "expired_at": "2026-02-06T00:11:55.560Z"
-    },
-    "/yiyiyi": {
-        "url": "https://junxiyiyi.lanzouq.com/ivUBN3hf74mj",
-        "expired_at": "2026-02-05T15:59:00.000Z"
-    },
-    "/op3et": {
-        "url": "https://yandex.com",
-        "expired_at": "2026-02-06T00:20:00.000Z"
     },
     "/liuli": {
         "url": "https://luckyy.qzz.io/home/",
@@ -1235,25 +1199,13 @@ window.RULES_INTERMEDIATE = {
         "url": "https://9lnk.io/T9",
         "expired_at": "2026-02-08T10:06:00.000Z"
     },
-    "/a11111": {
-        "url": "https://baidu.com",
-        "expired_at": "2026-02-05T16:00:00.000Z"
-    },
     "/conlt": {
         "url": "https://contract.freeflarum.com",
         "expired_at": "2026-02-11T08:05:00.000Z"
     },
-    "/mylink": {
-        "url": "https://github.com/IDhammaI/FrogClient/commits/1.0",
-        "expired_at": "2026-02-05T04:38:00.000Z"
-    },
     "/tv123": {
         "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
         "expired_at": "2026-02-12T07:13:00.000Z"
-    },
-    "/1145140": {
-        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3178782229&searchtext=%E5%9B%BD%E5%BE%BD",
-        "expired_at": "2026-02-05T17:51:00.000Z"
     },
     "/ShrySafety": {
         "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
