@@ -37,3 +37,88 @@
 
 7. 访问 /_url 即可创建短链（此时，动态创建短链功能已经完全可用）
 
+## 详细部署教程
+
+### 0. 准备工作
+
+- 需要一个 Cloudflare 账号和 GitHub 账号
+- 如果要使用自定义域名，先把域名托管到 Cloudflare（非必须）
+
+### 1. Fork 仓库并清理规则
+
+1. Fork 本仓库到你自己的 GitHub 账号
+2. 打开 `js/rules_intermediate.js` 和 `js/rules_direct.js`
+3. 删除示例规则，只保留空对象，例如：
+   ```js
+   window.RULES_INTERMEDIATE = {};
+   ```
+4. 如需修改默认跳转域名，可改 `js/config.js` 中的 `fallback`
+
+### 2. 修改前端文案与链接（可选但建议）
+
+编辑 `_url.html` 和 `404.html`，把页面标题、赞助链接、页脚链接等换成你的信息。
+
+### 3. 创建 Cloudflare Worker（连接 GitHub）
+
+1. 进入 Cloudflare 控制台 → **Workers & Pages**
+2. 点击 **Create** → 选择 **Workers** → **Connect to Github**
+3. 选择你 Fork 的仓库，创建新 Worker
+4. 部署完成后，Cloudflare 会自动使用 `wrangler.jsonc` 配置并托管静态资源
+
+### 4. 绑定自定义域名或路由
+
+在 Worker 详情页：
+
+- **Settings → Triggers → Custom Domains** 绑定你的域名，或
+- **Routes** 里绑定路由，例如 `example.com/*`
+
+访问根域名能看到 404 页即说明静态资源部署成功。
+
+### 5. 创建 GitHub Token
+
+需要一个能写入仓库文件的 Token。推荐 **Fine-grained PAT**：
+
+1. GitHub → **Settings → Developer settings → Personal access tokens**
+2. 选择 **Fine-grained**，仅授权你的这个仓库
+3. 权限至少需要：
+   - **Contents: Read and write**
+   - **Metadata: Read**
+
+### 6. 配置 Worker 环境变量（Secrets）
+
+进入 Worker → **Settings → Variables**，添加以下变量（注意区分普通变量与 Secrets）：
+
+- `GITHUB_OWNER`：你的 GitHub 用户名
+- `GITHUB_REPO`：仓库名
+- `GITHUB_BRANCH`：分支名（可选，默认 `main`）
+- `GITHUB_TOKEN`：上一步创建的 Token（建议用 **Secret**）
+- `BASE_DOMAIN`：你的短链域名，例如 `2x.nz`（用于 CSRF 校验与短链拼接）
+
+### 7. 验证静态重定向
+
+打开 `js/rules_direct.js` 或 `js/rules_intermediate.js` 手动写入一条规则，然后等部署完成：
+
+```
+https://你的域名/你的短链路径
+```
+
+能正常跳转说明静态功能已可用。
+
+### 8. 验证动态创建
+
+访问：
+
+```
+https://你的域名/_url
+```
+
+填写表单提交，如果能看到成功提示并生成 GitHub 提交记录，说明动态创建已可用。
+
+### 9. 清理过期短链（可选）
+
+本仓库提供 `cleanup_expired.js`，你可以：
+
+- 本地定时运行（Node.js）
+- 或用 GitHub Actions 定时触发（需要自行添加 workflow）
+
+完成后会自动清理过期规则。
