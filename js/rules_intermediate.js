@@ -1167,14 +1167,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/cjdlt": {
-        "url": "https://bcw11.cc?ref=6165",
-        "expired_at": "2026-02-06T13:25:00.000Z"
-    },
-    "/pixiv": {
-        "url": "https://httpbin.org/redirect-to?status_code=301&url=https://pixiv.net",
-        "expired_at": "2026-02-06T15:59:00.000Z"
-    },
     "/liuli": {
         "url": "https://luckyy.qzz.io/home/",
         "expired_at": "2026-02-07T05:48:00.000Z"
@@ -1182,10 +1174,6 @@ window.RULES_INTERMEDIATE = {
     "/karolbili": {
         "url": "https://www.bilibili.com",
         "expired_at": "2026-02-07T13:27:00.000Z"
-    },
-    "/xiaod": {
-        "url": "https://club.vip.qq.com/openKuikly/vas_qqvip_speed_act?open_kuikly_info=%7B%22bundle_name%22%3A%22vas_qqvip_speed_act%22%7D&qqmc_config=vas_kuikly_config&page_name=vas_qqvip_speed_act&kr_turbo_display=1&enteranceId=tupian&invite_code=e311f0f6-5425-4818-82e8-e021d10c5789&from=more_invite",
-        "expired_at": "2026-02-06T14:43:00.000Z"
     },
     "/qqqqq": {
         "url": "https://qun.qq.com/universal-share/share?ac=1&authKey=kxYA8SfEruRrQHEniJUrUkYDFmgk%2BkTBtdox0yhFrTBgDNp7a%2BxWzwpOUk9Vv5Ox&busi_data=eyJncm91cENvZGUiOiI1NDUzNjM3NjEiLCJ0b2tlbiI6IjQxRG0xL2d3TitzNVJiZHp5cnMwMUZMYXB4N0t6NDMxOXh3a0dRWmJuazFQNU4rVWhUaDYyQ1d3am5URXYvVjAiLCJ1aW4iOiIzNjMxMzM4MTMzIn0%3D&data",
