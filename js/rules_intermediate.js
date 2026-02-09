@@ -1167,17 +1167,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/qqqqq": {
-        "url": "https://qun.qq.com/universal-share/share?ac=1&authKey=kxYA8SfEruRrQHEniJUrUkYDFmgk%2BkTBtdox0yhFrTBgDNp7a%2BxWzwpOUk9Vv5Ox&busi_data=eyJncm91cENvZGUiOiI1NDUzNjM3NjEiLCJ0b2tlbiI6IjQxRG0xL2d3TitzNVJiZHp5cnMwMUZMYXB4N0t6NDMxOXh3a0dRWmJuazFQNU4rVWhUaDYyQ1d3am5URXYvVjAiLCJ1aW4iOiIzNjMxMzM4MTMzIn0%3D&data",
-        "expired_at": "2026-02-08T03:22:00.000Z"
-    },
     "/ldchat": {
         "url": "https://chat.dijiaozhibei.top/",
         "expired_at": "2026-02-10T09:48:00.000Z"
-    },
-    "/qxcvn": {
-        "url": "https://9lnk.io/T9",
-        "expired_at": "2026-02-08T10:06:00.000Z"
     },
     "/conlt": {
         "url": "https://contract.freeflarum.com",
