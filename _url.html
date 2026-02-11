@@ -140,6 +140,86 @@
     </div>
 
     <script>
+        const CF_RETRY_KEY = 'cfRetryPayload';
+        const CF_RETRY_FLAG_KEY = 'cfRetryAutoSubmit';
+        const CF_RETRY_COUNT_KEY = 'cfRetryCount';
+        const CF_RETRY_MAX = 1;
+
+        function saveRetryPayload(payload) {
+            localStorage.setItem(CF_RETRY_KEY, JSON.stringify(payload));
+            localStorage.setItem(CF_RETRY_FLAG_KEY, '1');
+            const currentCount = parseInt(localStorage.getItem(CF_RETRY_COUNT_KEY) || '0', 10);
+            localStorage.setItem(CF_RETRY_COUNT_KEY, String(currentCount + 1));
+        }
+
+        function clearRetryState() {
+            localStorage.removeItem(CF_RETRY_KEY);
+            localStorage.removeItem(CF_RETRY_FLAG_KEY);
+            localStorage.removeItem(CF_RETRY_COUNT_KEY);
+        }
+
+        function loadRetryPayload() {
+            const raw = localStorage.getItem(CF_RETRY_KEY);
+            if (!raw) return null;
+            try {
+                return JSON.parse(raw);
+            } catch (e) {
+                console.error('Invalid retry payload', e);
+                clearRetryState();
+                return null;
+            }
+        }
+
+        function applyPayloadToForm(payload) {
+            if (!payload) return;
+            document.getElementById('pathname').value = payload.pathname || '';
+            document.getElementById('url').value = payload.url || '';
+            document.getElementById('expired_at').value = payload.expired_at_input || '';
+        }
+
+        function shouldAutoSubmitRetry() {
+            return localStorage.getItem(CF_RETRY_FLAG_KEY) === '1';
+        }
+
+        function consumeAutoSubmitFlag() {
+            localStorage.removeItem(CF_RETRY_FLAG_KEY);
+        }
+
+        function isRetryCountExceeded() {
+            const count = parseInt(localStorage.getItem(CF_RETRY_COUNT_KEY) || '0', 10);
+            return count >= CF_RETRY_MAX;
+        }
+
+        function maybeHandleCfChallenge(response, payload) {
+            const cfMitigated = response.headers.get('cf-mitigated');
+            if (cfMitigated === 'challenge') {
+                saveRetryPayload(payload);
+                location.reload();
+                return true;
+            }
+            return false;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const retryPayload = loadRetryPayload();
+            if (retryPayload) {
+                applyPayloadToForm(retryPayload);
+            }
+
+            if (shouldAutoSubmitRetry()) {
+                consumeAutoSubmitFlag();
+                if (isRetryCountExceeded()) {
+                    showError('检测到多次挑战阻断，请稍后再试或切换网络环境');
+                    clearRetryState();
+                    return;
+                }
+                const messageDiv = document.getElementById('message');
+                messageDiv.textContent = '检测到 Cloudflare 挑战拦截，正在自动重试提交...';
+                messageDiv.className = 'message';
+                document.getElementById('createForm').requestSubmit();
+            }
+        });
+
         document.getElementById('createForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -177,19 +257,24 @@
                 // 假设 Worker 部署在 /api/create 或者同一域名下
                 // 这里使用相对路径，假设 Worker 路由配置为 /api/create
                 // 如果是独立域名，请修改此处
+                const payload = {
+                    pathname: pathname,
+                    url: url,
+                    expired_at: timestamp
+                };
+
                 const response = await fetch('/api/create', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({
-                        pathname: pathname,
-                        url: url,
-                        expired_at: timestamp
-                    })
+                    body: JSON.stringify(payload)
                 });
 
                 const text = await response.text();
+                if (maybeHandleCfChallenge(response, payload)) {
+                    return;
+                }
                 let result;
                 try {
                     result = JSON.parse(text);
@@ -250,12 +335,15 @@
 
                     messageDiv.className = 'message success';
                     document.getElementById('createForm').reset();
+                    clearRetryState();
                 } else {
                     showError(result.error || '提交失败');
+                    clearRetryState();
                 }
             } catch (err) {
                 console.error(err);
                 showError(err.message || '网络错误或请求失败');
+                clearRetryState();
             } finally {
                 submitBtn.disabled = false;
             }
