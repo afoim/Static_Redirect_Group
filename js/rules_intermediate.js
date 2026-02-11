@@ -1167,10 +1167,6 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/ldchat": {
-        "url": "https://chat.dijiaozhibei.top/",
-        "expired_at": "2026-02-10T09:48:00.000Z"
-    },
     "/conlt": {
         "url": "https://contract.freeflarum.com",
         "expired_at": "2026-02-11T08:05:00.000Z"
