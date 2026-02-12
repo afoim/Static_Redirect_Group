@@ -1167,17 +1167,9 @@ window.RULES_INTERMEDIATE = {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
     },
-    "/conlt": {
-        "url": "https://contract.freeflarum.com",
-        "expired_at": "2026-02-11T08:05:00.000Z"
-    },
     "/tv123": {
         "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
         "expired_at": "2026-02-12T07:13:00.000Z"
-    },
-    "/ShrySafety": {
-        "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
-        "expired_at": "2026-02-11T15:42:00.000Z"
     },
     "/ShiraySafe": {
         "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
