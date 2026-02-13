@@ -1166,13 +1166,5 @@ window.RULES_INTERMEDIATE = {
     "/1212dff": {
         "url": "https://blog.acofork.com/posts/onedrive-index/",
         "expired_at": ""
-    },
-    "/tv123": {
-        "url": "https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/XC.json",
-        "expired_at": "2026-02-12T07:13:00.000Z"
-    },
-    "/ShiraySafe": {
-        "url": "https://image.cursorhub.org/user-upload/1770305328089-c3f106be-f73a-48a0-b8c5-96cb68721e8d.html",
-        "expired_at": "2026-02-12T15:42:00.000Z"
     }
 };
